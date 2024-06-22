@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# React_BoilerPlate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 설정 라이브러리
 
-Currently, two official plugins are available:
+-   `zustand` : 전역 상태관리
+-   `@tanstack/react-query` : 비동기 상태관리
+-   `axios` : 요청
+-   `react-router-dom` : 라우팅
+-   `styled-components` : 스타일링
+-   `styled-reset` : 스타일링 초기화
+-   `dotenv` : 환경변수 사용
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 디렉토리 구조
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+./src
+   ├─ /apis          ───> api요청 관리
+   ├─ /assets        ───> Png, Svg, Font 등의 설정 관리
+   ├─ /components    ───> 컴포넌트 관리
+   ├─ /configs       ───> 앱 설정 관리
+   ├─ /constants     ───> 앱 상수 관리
+   ├─ /hooks         ───> 훅(로직) 관리
+   ├─ /pages         ───> 주요 페이지 단위 컴포넌트 관리
+   ├─ /routes        ───> 라우팅 관리
+   ├─ /stores        ───> 전역 상태 관리
+   └─ /styles        ───> 전역 스타일링 관리
+```
